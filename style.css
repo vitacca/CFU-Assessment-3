@@ -18,7 +18,7 @@ font-family: Arial, sans-serif;
 
 }
 
-main {background-color: rgba(255, 0, 0, 0.8);
+main {background-color: white;
     padding: 3%
 }
 
@@ -53,7 +53,34 @@ nav ul {
 }
 
 
-/* components */
+/* Steph home page */
 
+.image-list{
 
+margin: 0;
+padding: 0;
+list-style: none;
 
+}
+
+.image-list span {
+
+    display: block;
+
+}
+
+@media screen and (min-width: 500px){
+    .image-list{
+
+    display: grid;
+grid-template-columns: auto auto;
+
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .image-list {
+        grid-template-columns: auto auto auto;
+    }
+}
