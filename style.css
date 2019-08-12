@@ -10,15 +10,12 @@ audio {
 }
 body {
 
-    background-color: yellow;
-    background-image: url(assets/card-dark-floating.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: whitesmoke;
 font-family: Arial, sans-serif;
 
 }
 
-main {background-color: rgba(255, 0, 0, 0.8);
+main {background-color: whitesmoke;
     padding: 3%
 }
 
@@ -32,7 +29,30 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-}
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
 
 /*general layout stuff */
 
@@ -51,3 +71,69 @@ nav ul {
 
 
 }
+
+
+/*  About page */
+
+.image-list{
+
+margin: 0;
+padding: 0;
+list-style: none;
+
+}
+
+.image-list span {
+
+    display: block;
+
+}
+
+@About screen and (min-width: 500px){
+    .image-list{
+
+    display: grid;
+grid-template-columns: auto auto;
+
+    }
+}
+
+@About screen and (min-width: 800px) {
+
+    .image-list {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+/*  Blog page */
+
+.image-list{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    }
+    
+    .image-list span {
+    
+        display: block;
+    
+    }
+    
+    @Blog screen and (min-width: 500px){
+        .image-list{
+    
+        display: grid;
+    grid-template-columns: auto auto;
+    
+        }
+    }
+    
+    @Blog screen and (min-width: 800px) {
+    
+        .image-list {
+            grid-template-columns: auto auto auto;
+        }
+    }
