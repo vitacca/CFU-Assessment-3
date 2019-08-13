@@ -19,6 +19,11 @@ margin: 0 auto;
 
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
+
 main {background-color: white;
     padding: 3%;
     margin-bottom: 40px
@@ -174,4 +179,23 @@ grid-template-columns: auto auto;
 .image-list a:hover img {
     filter: grayscale(0%);
     transform: scale(1.2);
+}
+
+/*Blog Page Images */
+
+.article-image {
+width: 700px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   margin-top: 40px;
+   margin-bottom: 40px;
+
+}
+
+.base-image {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
 }
